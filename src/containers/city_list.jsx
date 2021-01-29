@@ -10,14 +10,13 @@ class CityList extends Component {
     this.props.setCities();
   }
 
-
   render() {
     const citiesArray = this.props.cities.map((city) => {
       return <City city={city} key={city.slug} />;
     });
 
     return (
-      <div>
+      <div className="cities">
         {citiesArray}
       </div>
     );

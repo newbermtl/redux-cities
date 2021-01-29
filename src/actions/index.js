@@ -32,3 +32,10 @@ export function setCities() {
   };
 }
 
+export function setActiveCity(city) {
+  return {
+    type: 'ACTIVATE_CITY',
+    payload: city
+  };
+}
+
